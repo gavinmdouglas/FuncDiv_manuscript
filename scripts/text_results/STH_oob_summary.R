@@ -10,6 +10,9 @@ metrics_to_ignore <- c("menhinicks_richness", "mcintoshs_evenness", "mcintoshs_d
                        "margalefs_richness", "fishers_alpha", "faiths_pd")
 metrics <- names(FuncDiv_alpha_metrics)[which(! names(FuncDiv_alpha_metrics) %in% metrics_to_ignore)]
 
-
+max(oob_out[metrics, 1])
 mean(oob_out[metrics, 1])
+sd(oob_out[metrics, 1])
 
+mean(oob_out[paste(metrics, ".w_relabun", sep = ""), 1])
+sd(oob_out[paste(metrics, ".w_relabun", sep = ""), 1])
