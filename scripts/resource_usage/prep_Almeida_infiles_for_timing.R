@@ -15,10 +15,10 @@ full_ko <- read.table("/data1/gdouglas/projects/contrib_div/FuncDiv_manuscript/d
 full_subsetted_tables <- subset_func_and_abun_tables(func_table = full_ko,
                                                      abun_table = full_abun)
 
-# Subsample to ~500 samples and ~2000 functions.
+# Subsample to 1500 samples and ~2000 functions.
 set.seed(14514)
 test_ko <- full_subsetted_tables$func[sample(1:nrow(full_subsetted_tables$func), size = 2050), ]
-test_abun <- full_subsetted_tables$abun[, sample(1:ncol(full_subsetted_tables$abun), size = 525)]
+test_abun <- full_subsetted_tables$abun[, sample(1:ncol(full_subsetted_tables$abun), size = 1500)]
 
 test_subsetted_tables <- subset_func_and_abun_tables(func_table = test_ko,
                                                      abun_table = test_abun)
