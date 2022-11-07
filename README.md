@@ -5,6 +5,7 @@ Code used for showcasing the [`FuncDiv` R package](https://github.com/gavinmdoug
 * `data/`
   * `Almeida_2019_dataset/` - input data used for assessing `FuncDiv` resource usage.
   * `random_forest/` - input and output files of random forest analysis.
+  * `HUMAnN3_tutorial_table/` - table taken from HUMAnN3 tutorial to use for comparison.
   
 * `scripts/` - code used to run manuscript analyses, split up by code for random forest and resource usage analyses, and minor code for results reported in text.
 
